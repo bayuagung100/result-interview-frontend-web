@@ -1,0 +1,45 @@
+sidebar {
+    display: block;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    // // height: 100vh;
+    // overflow-y: hidden;
+    // box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.16);
+    // padding: 10px;
+
+    height: inherit;
+    min-height: 100%;
+    position: relative;
+    top: 0;
+
+    @media screen and (max-width: 992px) {
+        height: auto;
+        .logo {
+            padding: 10px 5px !important;
+        }
+    }
+
+    .logo {
+        padding: 40px 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    nav {
+        display: block;
+        .item {
+            margin: 1rem 0;
+            text-align: center;
+            opacity: 0.5;
+            line-height: 2;
+            .ic {
+                // transform: translate(0px, 8px);
+            }
+            &.active {
+                font-weight: 600;
+                opacity: 1;
+                border-right: 4px solid #034ea1;
+            }
+        }
+    }
+}
