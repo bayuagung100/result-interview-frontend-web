@@ -1,10 +1,15 @@
 import React, { Component } from "react";
 import Datatable from 'datatables.net-bs4';
+import UIAvatar from 'react-ui-avatars';
+
 const $ = require('jquery')
 $.Datatable = Datatable;
 
+UIAvatar.settings.rounded = true;
+
+
+
 function DtTable(props) {
-    // console.log('props', props)
     require('datatables.net-bs4/css/dataTables.bootstrap4.min.css');
     const id = props.id;
     const data = props.data;
@@ -25,6 +30,7 @@ function DtTable(props) {
                         return (
                             <tr key={index}>
                                 <td>
+                                    <UIAvatar className='avatar-ui' name={value.title} background="#dceaf6" size={40} />
                                     {
                                         value.title
                                     }

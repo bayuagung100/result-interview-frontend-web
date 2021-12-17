@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, Switch, Route, } from "react-router-dom";
 import { IcQ1, IcQ2, Logo } from "../assets";
 import '../assets/style.scss';
+import Footer from "./footer";
 import Question1 from "./question/question1";
 import Question2 from "./question/question2";
 
@@ -43,8 +44,12 @@ const Index = (props) => {
                             <Route path="/question-1" exact component={Question1} />
                             <Route path="/question-2" exact component={Question2} />
                         </Switch>
+                        <Footer />
                     </content>
+
                 </div>
+
+
             </div>
         </>
     )

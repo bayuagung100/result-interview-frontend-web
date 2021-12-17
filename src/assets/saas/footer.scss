@@ -1,0 +1,15 @@
+.footer {
+    bottom: 0;
+    left: 0;
+    position: relative;
+    right: 0;
+    z-index: 1032;
+    text-align: center;
+    margin: 40px;
+    font-size: 18px;
+
+    span {
+        font-weight: 600;
+        color: #034ea1;
+    }
+}
